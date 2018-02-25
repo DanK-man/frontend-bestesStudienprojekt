@@ -15,7 +15,8 @@ import {
 } from '../node_modules/material-ui/styles/colors';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-
+// Hier kann das Styling der Material-UI-Komponenten für die *ganze*
+// App angepasst werden (etwa z.B. das Farbschema)
 const customTheme = getMuiTheme({
     palette: {
       textColor: pink700,

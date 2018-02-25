@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 
+// Die Nachricht die beim Aufruf der Seite angezeigt wird.
+// In App.js muss noch eine Methode zum Hochladen einer alten Präsentation
+// implementiert werden, die dann hierher weitergegeben werden muss.
+
 class BegruesungsDialog extends Component {
   constructor(props) {
     super(props);

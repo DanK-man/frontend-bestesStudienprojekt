@@ -3,7 +3,6 @@ import Paper from 'material-ui/Paper';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContendAdd from 'material-ui/svg-icons/content/add';
 
-import './FAB.css';
 import './Editorsicht.css'
 import EditorFolie from './EditorFolie'
 import RenderFolie from './RenderFolie'
@@ -23,7 +22,6 @@ class Editorsicht extends Component {
       <div>
         <div className="Folienstream">
         { expFolien }
-
         </div>
         <FloatingActionButton className="FABEditor"
           onClick={this.props.neueFolie}>

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Paper from 'material-ui/Paper';
 import MarkdownRender from './MarkdownRender';
 
+//bisher wiederholen sich die style-Angaben in Render- und EditorFolie.
 function RenderFolie(props) {
   return (
     <div>
