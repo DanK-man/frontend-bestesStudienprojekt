@@ -3,17 +3,14 @@ import AppBar from 'material-ui/AppBar';
 
 import Editorsicht from './Editorsicht'
 
-class ActionBar extends Component {
-
-  render() {
+function ActionBar(props){
     return (
       <div>
         <AppBar zDepth={0}
-          title={this.props.title}
+          title={props.title}
           titleStyle={{textAlign: "center"}}/>
       </div>
     );
-  }
 }
 
 export default ActionBar;

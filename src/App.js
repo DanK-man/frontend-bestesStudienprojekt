@@ -1,49 +1,29 @@
 import React, {Component} from 'react';
+import Home from './Home';
+import About from './About';
+import Zuschauersicht from './Zuschauersicht';
+
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import customTheme from './customMuiTheme';
-import ActionBar from './ActionBar';
-import Sichten from './Sichten';
-import BegruesungsDialog from './BegruesungsDialog';
+
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 
 class App extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      folien: [""], //die Präsentation
-    }
-    this.handleNeueFolie=this.handleNeueFolie.bind(this);
-    this.handleChange=this.handleChange.bind(this);
-  }
-
-//fügt eine neue Folie zur Präsentation hinzu
-  handleNeueFolie() {
-    const f = this.state.folien;
-    f.push("");
-    this.setState(f);
-  /*    console.log("Click");  //debuggen
-        console.log(this.state.folien) */
-  }
-
-//Updatet die Folien
-  handleChange(event) {
-    var newFolien = this.state.folien.slice();
-    newFolien[event.target.name] = event.target.value;
-    this.setState({folien: newFolien});
-/*    console.log(newFolien, event.target.name)
-    console.log(this.state.folien) */ //debuggen
-  }
 
   render() {
     return (
       <MuiThemeProvider muiTheme={customTheme}>
-        <ActionBar title="Hombres!"/>
-        <Sichten folien={this.state.folien}
-          neueFolie={this.handleNeueFolie}
-          onChange={this.handleChange}/>
-        <BegruesungsDialog/>
+
+        <BrowserRouter>
+          <div>
+            <Route path='/' component={Home} exact />
+            <Route path='/about' component={About} />
+            <Route path='/vortrag/:vortragsID(\d+)' component={Zuschauersicht}  />
+          </div>
+        </BrowserRouter>
 
       </MuiThemeProvider>
+
     );
   }
 }
