@@ -9,7 +9,13 @@ function PraesentationFolie(props) {
   return (
     <div>
       <Paper
-        style={{marginLeft: "2.5%", marginTop: "2.5%", marginBottom: ".5%", marginRight: "2.5%", height: "25em", width: "46%", float: "right"}}
+        style={{marginLeft: ".5%",
+                marginTop: "2.5%",
+                marginBottom: ".5%",
+                marginRight: "2.5%",
+                height: "25em",
+                width: "55%",
+                float: "right"}}
         zDepth={3}>
         <textarea
           value={props.inhalt}
@@ -18,7 +24,9 @@ function PraesentationFolie(props) {
                   resize: "none", border:"none",
                   }}
         />
+            Folienansicht
       </Paper>
+
     </div>
   );
 }

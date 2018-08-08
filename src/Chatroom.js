@@ -18,6 +18,7 @@ function Chatroom(props) {
                   resize: "none", border:"none",
                   }}
         />
+        Chat
       </Paper>
     </div>
   );

@@ -1,6 +1,9 @@
 #Chatroom {
-  margin-left: 2.5%;
+ margin-top: 2%;
+  margin-right:2.5%;
   height: 12em;
-  width: 95%;
-  float: left;
+  width: 76%;
+  float: right;
+
+  bottom: 0;
 }

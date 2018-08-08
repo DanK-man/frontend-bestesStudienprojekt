@@ -7,11 +7,12 @@ import {
   cyan500
 } from '../node_modules/material-ui/styles/colors';
 
-import './Editorsicht.css'
+
 import RenderFolie from './RenderFolie'
 import PraesentationFolie from './PraesentationFolie'
 import Chatroom from './Chatroom'
 import Facecam from './Facecam'
+import FolienGrid from './FolienGrid'
 
 class PraesentationsSicht extends Component {
 
@@ -21,11 +22,15 @@ class PraesentationsSicht extends Component {
     return (
       <div>
         <div className="PresView">
-          <Facecam/>
-      
+
+
           <PraesentationFolie/>
+          <FolienGrid />
           <Chatroom />
+          <Facecam />
+
         </div>
+
       </div>
     );
   }

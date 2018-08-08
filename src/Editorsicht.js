@@ -7,10 +7,10 @@ import {
   cyan500
 } from '../node_modules/material-ui/styles/colors';
 
-import './Editorsicht.css'
+
 import EditorFolie from './EditorFolie'
 import RenderFolie from './RenderFolie'
-
+import './Editorsicht.js'
 class Editorsicht extends Component {
 
 

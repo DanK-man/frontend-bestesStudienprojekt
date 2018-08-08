@@ -11,7 +11,6 @@ class MarkdownRender extends React.Component {
     //evtl gefährlich
     return <div dangerouslySetInnerHTML={this.getMarkdown()} />;
   }
-
 }
 
 export default MarkdownRender;

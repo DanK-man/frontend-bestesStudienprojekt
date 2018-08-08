@@ -12,7 +12,6 @@ import {
   cyan500,
   pink700,
   grey500,
-  black
 } from '../node_modules/material-ui/styles/colors';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
@@ -21,7 +20,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 const customTheme = getMuiTheme({
     palette: {
       textColor: pink700,
-      primary1Color: cyan500,
+      primary1Color:  "#333",
     },
     appBar: {
       height: 40,

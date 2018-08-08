@@ -49,7 +49,6 @@ class Sichten extends Component {
           </div>
           <div>
             <PraesentationsSicht/>
-          // Hier kommt dann die Vortragssicht rein
           </div>
         </SwipeableViews>
       </div>
