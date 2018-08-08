@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
-
+//import styled from 'styled-components';
 // Die Nachricht die beim Aufruf der Seite angezeigt wird.
 // In App.js muss noch eine Methode zum Hochladen einer alten Präsentation
 // implementiert werden, die dann hierher weitergegeben werden muss.
+
 
 class BegruesungsDialog extends Component {
   constructor(props) {
@@ -42,9 +44,10 @@ class BegruesungsDialog extends Component {
         labelStyle={{fontSize: 15}}
       />
     ]
-
     return (
+
       <div>
+
         <Dialog modal={true}
           open={this.state.open}
           actions={actions}

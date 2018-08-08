@@ -1,9 +1,12 @@
+
 .Folienstream {
+  background-color: papayawhip;
 }
 
 .Folienduo {
+  background-color: palevioletred;
   margin: 1em auto;
-  height: 30em;
+  height: 30%;
   width: 70em;
 }
 

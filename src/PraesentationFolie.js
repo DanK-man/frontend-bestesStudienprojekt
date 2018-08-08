@@ -4,11 +4,12 @@ import {
   palevioletred,
   cyan500
 } from '../node_modules/material-ui/styles/colors';
-function EditorFolie(props) {
+
+function PraesentationFolie(props) {
   return (
     <div>
       <Paper
-        style={{margin: "5%", height: "20em", width: "40%", float: "left"}}
+        style={{marginLeft: "2.5%", marginTop: "2.5%", marginBottom: ".5%", marginRight: "2.5%", height: "25em", width: "46%", float: "right"}}
         zDepth={3}>
         <textarea
           value={props.inhalt}
@@ -16,11 +17,10 @@ function EditorFolie(props) {
           style={{height: "100%", width: "100%",
                   resize: "none", border:"none",
                   }}
-          onChange={props.onChange}
         />
       </Paper>
     </div>
   );
 }
 
-export default EditorFolie;
+export default PraesentationFolie;

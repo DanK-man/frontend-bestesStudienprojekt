@@ -5,6 +5,7 @@ import ActionBar from './ActionBar';
 import Sichten from './Sichten';
 import BegruesungsDialog from './BegruesungsDialog';
 
+
 class App extends Component {
 
   constructor(props) {
@@ -36,14 +37,19 @@ class App extends Component {
 
   render() {
     return (
+      <div>
+      <head>
+      <title> HOMEPLES </title>
+      </head>
       <MuiThemeProvider muiTheme={customTheme}>
-        <ActionBar title="Hombres!"/>
+        <ActionBar title="HomePresentation!"/>
         <Sichten folien={this.state.folien}
           neueFolie={this.handleNeueFolie}
           onChange={this.handleChange}/>
         <BegruesungsDialog/>
 
       </MuiThemeProvider>
+      </div>
     );
   }
 }

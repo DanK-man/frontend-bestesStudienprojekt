@@ -3,6 +3,7 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
 
 import Editorsicht from './Editorsicht';
+import PraesentationsSicht from './PraesentationsSicht';
 
 // Diese Klasse implementiert die zwei Tabs und das wechseln zwischen diesen.
 // Die Implementierung von SwipeableViews folgt dem Beispiel auf:
@@ -47,8 +48,8 @@ class Sichten extends Component {
               onChange={this.props.onChange}/>
           </div>
           <div>
+            <PraesentationsSicht/>
           // Hier kommt dann die Vortragssicht rein
-            <p>blafasl</p>
           </div>
         </SwipeableViews>
       </div>

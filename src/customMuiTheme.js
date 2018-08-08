@@ -12,6 +12,7 @@ import {
   cyan500,
   pink700,
   grey500,
+  black
 } from '../node_modules/material-ui/styles/colors';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
