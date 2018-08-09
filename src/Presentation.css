@@ -1,0 +1,68 @@
+#PresentationView{
+  top: 0; left: 0;
+  height: 60em;
+  width: 100%;
+  float: left;
+}
+
+#PresFolie {
+  top: 0; left: 0;
+  width: 100%;
+  height: 71%;
+  float: left;
+}
+
+#FolienGrid{
+  top: 0; left: 0;
+  margin: .5%;
+  height: 71%;
+  width: 100%;
+  float: left;
+}
+
+#Chatroom {
+   position: absolute;
+  top: 0; left: 0;
+  margin: .5%;
+  margin-top: 15em;
+  height: 60%;
+  width: 99%;
+
+}
+
+#Facecam {
+  position: absolute;
+  top: 0; left: 0;
+  margin: .5%;
+  margin-left: 16%;
+  height: 23%;
+  width: 66%;
+
+
+}
+
+.leftColumn {
+  margin: .5%;
+  height: 100%;
+  width: 14%;
+  float: left;
+  display: inline;
+}
+
+.midColumn {
+ margin: .1%;
+ margin-top: .5%;
+ height: 100%;
+ width: 59.8%;
+ float: left;
+ display: inline;
+}
+
+.rightColumn {
+
+ margin: .5%;
+ height: 100%;
+ width: 24%;
+ float: left;
+ position: relative;
+}

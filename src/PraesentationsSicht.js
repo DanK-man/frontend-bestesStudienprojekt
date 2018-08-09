@@ -6,6 +6,7 @@ import {
   palevioletred,
   cyan500
 } from '../node_modules/material-ui/styles/colors';
+import "./Presentation.css"
 
 
 import RenderFolie from './RenderFolie'
@@ -20,17 +21,18 @@ class PraesentationsSicht extends Component {
   render() {
 
     return (
-      <div>
-        <div className="PresView">
-
-
-          <PraesentationFolie/>
-          <FolienGrid />
+      <div id ="PresentationView">
+        <div class="leftColumn">
+            <FolienGrid />
+        </div>
+        <div class="midColumn">
+            <PraesentationFolie/>
+        </div>
+        <div class="rightColumn">
           <Chatroom />
           <Facecam />
 
         </div>
-
       </div>
     );
   }

@@ -3,8 +3,7 @@ import React from 'react';
 import Paper from 'material-ui/Paper';
 import {List, ListItem} from 'material-ui/List';
 import ContentInbox from 'material-ui/svg-icons/content/inbox';
-import './FolienGrid.css'
-
+import "./Presentation.css"
 
 // Dummy-Komponente für die eigentliche Zuschauersicht
 // Chris, das hier mit deinem ersetzen
@@ -15,9 +14,9 @@ const styles = {
 const tilesData = []; //tbd
 function FolienGrid(props) {
   return (
-    <div>
+      <div style={{height: "inherit"}}>
       <Paper id="FolienGrid" zDepth={3}
-        style={{maxHeight: "25em", overflow: 'auto'}}>
+        style={{maxHeight: "60em", overflow: 'auto'}}>
         <List>
            <ListItem primaryText="${this.props.folien.value}" leftIcon={<ContentInbox />} />
            <ListItem primaryText="Folie 2" leftIcon={<ContentInbox />} />

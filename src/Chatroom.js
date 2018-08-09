@@ -5,20 +5,20 @@ import {
   cyan500
 } from '../node_modules/material-ui/styles/colors';
 
-import './Chatroom.css'
+import "./Presentation.css"
 
 function Chatroom(props) {
   return (
-    <div>
+    <div style={{height: "inherit"}}>
       <Paper id="Chatroom" zDepth={3}>
         <textarea
           value={props.inhalt}
           name = {props.name}
-          style={{height: "100%", width: "100%",
+          style={{
                   resize: "none", border:"none",
                   }}
         />
-        Chat
+        Chatroom
       </Paper>
     </div>
   );
