@@ -4,6 +4,7 @@ import {
   palevioletred,
   cyan500
 } from '../node_modules/material-ui/styles/colors';
+
 function EditorFolie(props) {
   return (
     <div>

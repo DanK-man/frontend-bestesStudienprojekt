@@ -5,23 +5,18 @@ import {
   cyan500
 } from '../node_modules/material-ui/styles/colors';
 
+import MarkdownRender from './MarkdownRender';
+
+
 import "./Presentation.css"
 
 function PraesentationFolie(props) {
+  //TODO einheitliche Komponente, damit Vorschau und dies hier konsistent dargestellt werden.
   return (
     <div style={{height: "inherit"}}>
-      <Paper id="PresFolie"
-
-        zDepth={3}>
-        <textarea
-          value={props.inhalt}
-          name = {props.name}
-          style={{resize: "none", border: "none",
-                }}
-        />
-            Folienansicht
+      <Paper id="PresFolie"  zDepth={3}>
+        <MarkdownRender inhalt={props.inhalt} />
       </Paper>
-        Lorem ipsum...
     </div>
   );
 }
