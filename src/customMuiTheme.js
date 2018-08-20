@@ -23,7 +23,7 @@ const customTheme = getMuiTheme({
       primary1Color:  "#333",
     },
     appBar: {
-      height: 40,
+      height: 30,
     },
 
   }

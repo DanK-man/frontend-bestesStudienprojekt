@@ -8,7 +8,7 @@ function EditorFolie(props) {
   return (
     <div>
       <Paper
-        style={{margin: "5%", height: "20em", width: "40%", float: "left"}}
+        style={{margin: "5%", height: "27.5em", width: "40%", float: "left"}}
         zDepth={3}>
         <textarea
           value={props.inhalt}

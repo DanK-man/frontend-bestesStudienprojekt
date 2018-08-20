@@ -24,7 +24,7 @@ class Sichten extends Component {
 
   render() {
     return (
-      <div style={{height: "inherit"}}>
+      <div>
         <Tabs onChange={this.handleChange}
           value={this.state.slideIndex}
         //Tabs hat keine zDepth property, hardcoded bis bessere Lösung
@@ -40,15 +40,13 @@ class Sichten extends Component {
             />
         </Tabs>
         <SwipeableViews index={this.state.slideIndex}
-          onChangeIndex={this.handleChange}
-          
-        >
+          onChangeIndex={this.handleChange}>
           <div>
             <Editorsicht folien={this.props.folien}
               neueFolie={this.props.neueFolie}
               onChange={this.props.onChange}/>
           </div>
-          <div style={{height: "inherit"}}>
+          <div>
             <PraesentationsSicht/>
           </div>
         </SwipeableViews>

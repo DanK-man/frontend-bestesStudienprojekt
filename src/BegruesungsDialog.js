@@ -2,6 +2,12 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
+import {
+  Link,
+} from 'react-router-dom';
+
+import Zuschauersicht from "./Zuschauersicht";
+
 //import styled from 'styled-components';
 // Die Nachricht die beim Aufruf der Seite angezeigt wird.
 // In App.js muss noch eine Methode zum Hochladen einer alten Präsentation
@@ -28,22 +34,30 @@ class BegruesungsDialog extends Component {
 
   render() {
     const actions = [
-      <FlatButton
-        label="Neue Präsentation erstellen"
-        onClick={this.handleNew}
-        style={{margin: 10,
+      <div>
+        <FlatButton
+          label="Neue Präsentation erstellen"
+          onClick={this.handleNew}
+          style={{margin: 10,
                 }}
-        labelStyle={{fontSize: 20, }}
+                labelStyle={{fontSize: 20, }}
 
-      />,
-      <FlatButton
-        label="Präsentation hochladen"
-        onClick={this.handleUpload}
-        style={{margin: 10,
-                }}
-        labelStyle={{fontSize: 15}}
-      />
-    ]
+                />,
+                <FlatButton
+                label="Präsentation hochladen"
+                onClick={this.handleUpload}
+                style={{margin: 10,
+                  }}
+                labelStyle={{fontSize: 15}}
+                />
+                <Link to='vortrag/2'>
+                <FlatButton
+                label="Zuschauen!"
+
+                />
+                </Link>
+              </div>
+              ]
     return (
 
       <div>

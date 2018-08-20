@@ -9,15 +9,26 @@ import "./Presentation.css"
 
 function Facecam(props) {
   return (
-      <div style={{height: "inherit"}}>
-      <Paper id="Facecam" zDepth={3}>
+    <div style={{height: "inherit"}}>
+      <Paper className="Facecam"
+      zDepth={3}>
+        <textarea
+          value={props.inhalt}
+          name = {props.name}
+          style={{ resize: "none", border:"none",
+                  }}
+
+        />
+        Facecam
+      </Paper >
+        <Paper className="Chatroom" zDepth={3}>
         <textarea
           value={props.inhalt}
           name = {props.name}
           style={{ resize: "none", border:"none", }}
 
         />
-        Facecam
+        Chatroom
       </Paper>
     </div>
   );

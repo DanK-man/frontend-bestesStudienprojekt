@@ -34,11 +34,12 @@ class Home extends Component {
 
   render() {
     return (
-      <div style={{height: "inherit"}}>
-        <ActionBar title="Hombres!"/>
+      <div style={{height: "100%"}}>
+        <ActionBar title="Home Presentation!"/>
         <Sichten folien={this.state.folien}
           neueFolie={this.handleNeueFolie}
-          onChange={this.handleChange}/>
+          onChange={this.handleChange}
+        />
         <BegruesungsDialog/>
 
       </div>

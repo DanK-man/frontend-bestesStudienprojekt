@@ -20,7 +20,8 @@ class Editorsicht extends Component {
       <div className="Folienduo" key={index}>
         <EditorFolie name={index} inhalt={n} onChange={this.props.onChange}/>
         <RenderFolie inhalt={n} />
-      </div> );
+      </div>
+      );
 
     return (
       <div>

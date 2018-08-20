@@ -9,19 +9,13 @@ import "./Presentation.css"
 
 function PraesentationFolie(props) {
   return (
-    <div style={{height: "inherit"}}>
-      <Paper id="PresFolie"
-
+    <div style={{height: "inherit"}}
+     id="PresFolie">
+      <Paper
+        style={{margin: "1.5%", height: "42.5em", width: "97%"}}
         zDepth={3}>
-        <textarea
-          value={props.inhalt}
-          name = {props.name}
-          style={{resize: "none", border: "none",
-                }}
-        />
-            Folienansicht
+       
       </Paper>
-        Lorem ipsum...
     </div>
   );
 }

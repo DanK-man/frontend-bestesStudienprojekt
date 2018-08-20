@@ -21,17 +21,15 @@ class PraesentationsSicht extends Component {
   render() {
 
     return (
-      <div id ="PresentationView">
-        <div class="leftColumn">
+      <div className="PresentationView">
+        <div className="leftColumn">
             <FolienGrid />
         </div>
-        <div class="midColumn">
+        <div className="midColumn">
             <PraesentationFolie/>
         </div>
-        <div class="rightColumn">
-          <Chatroom />
+        <div className="rightColumn">
           <Facecam />
-
         </div>
       </div>
     );

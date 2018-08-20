@@ -6,7 +6,7 @@ import Zuschauersicht from './Zuschauersicht';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import customTheme from './customMuiTheme';
 
-import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 
 class App extends Component {
 
@@ -14,16 +14,15 @@ class App extends Component {
     return (
       <MuiThemeProvider muiTheme={customTheme}>
 
-        <BrowserRouter>
-          <div>
+        <Router>
+          <div style={{height: "inherit"}}>
             <Route path='/' component={Home} exact />
             <Route path='/about' component={About} />
             <Route path='/vortrag/:vortragsID(\d+)' component={Zuschauersicht}  />
           </div>
-        </BrowserRouter>
+        </Router>
 
       </MuiThemeProvider>
-
     );
   }
 }

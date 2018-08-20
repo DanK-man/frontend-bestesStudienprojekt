@@ -1,68 +1,72 @@
-#PresentationView{
-  top: 0; left: 0;
-  height: 60em;
-  width: 100%;
-  float: left;
-}
+
 
 #PresFolie {
-  top: 0; left: 0;
-  width: 100%;
-  height: 71%;
-  float: left;
+  margin: 2.5%;
+  width: 95%;
+  height: 39.5em;
 }
 
 #FolienGrid{
-  top: 0; left: 0;
   margin: .5%;
-  height: 71%;
+  height: 93%;
   width: 100%;
-  float: left;
+}
+.Facecam {
+  margin-left: 4%;
+  margin: .5%;
+  width: 65%;
+  height: 25%;
+}
+.Chatroom {
+  margin: .5%;
+  height: 70%;
 }
 
-#Chatroom {
-   position: absolute;
-  top: 0; left: 0;
-  margin: .5%;
-  margin-top: 15em;
-  height: 60%;
-  width: 99%;
-
-}
-
-#Facecam {
-  position: absolute;
-  top: 0; left: 0;
-  margin: .5%;
-  margin-left: 16%;
-  height: 23%;
-  width: 66%;
 
 
+.PresentationView{
+  margin-top: 1%;
+  width: 100%;
+  height: 50em;
 }
 
 .leftColumn {
-  margin: .5%;
   height: 100%;
+
+  margin: .5%;
   width: 14%;
   float: left;
-  display: inline;
 }
 
 .midColumn {
+
  margin: .1%;
  margin-top: .5%;
- height: 100%;
  width: 59.8%;
+ height: 100%;
+ position: relative;
  float: left;
- display: inline;
+
 }
 
 .rightColumn {
+  height: 100%;
+  margin: .5%;
+  width: 24%;
+  float: left;
 
- margin: .5%;
- height: 100%;
- width: 24%;
- float: left;
- position: relative;
+}
+
+.viewerFoil {
+  margin: .1%;
+  height: 100%;
+  width: 65%;
+  float: left;
+}
+
+.viewerChat {
+  margin: .1%;
+  height: 100%;
+  width: 34.6%;
+  float: left;
 }
