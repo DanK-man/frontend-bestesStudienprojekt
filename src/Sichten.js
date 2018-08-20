@@ -39,6 +39,7 @@ class Sichten extends Component {
             buttonStyle={{height: 40}}
             />
         </Tabs>
+
         <SwipeableViews index={this.state.slideIndex}
           onChangeIndex={this.handleChange}>
           <div>
@@ -53,6 +54,7 @@ class Sichten extends Component {
             <PraesentationsSicht
               folien={this.props.folien}/>
           </div>
+        </div>
         </SwipeableViews>
       </div>
     );

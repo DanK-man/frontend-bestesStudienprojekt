@@ -33,20 +33,17 @@ class PraesentationsSicht extends Component {
   render() {
 
     return (
-      <div className="PresentationView">
-        <div className="leftColumn">
-            <FolienGrid />
-        </div>
-        <div className="midColumn">
-            <PraesentationFolie/>
+
       <div id ="PresentationView">
         <div class="leftColumn">
-            <FolienGrid folien={this.props.folien}
+            <FolienGrid 
+              folien={this.props.folien}
               onClick = {this.onClick}
             />
         </div>
         <div class="midColumn">
-            <PraesentationFolie inhalt={this.props.folien[this.state.currentFolie]}/>
+            <PraesentationFolie 
+              inhalt={this.props.folien[this.state.currentFolie]}/>
         </div>
         <div className="rightColumn">
           <Facecam />
