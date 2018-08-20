@@ -44,10 +44,14 @@ class Sichten extends Component {
           <div>
             <Editorsicht folien={this.props.folien}
               neueFolie={this.props.neueFolie}
-              onChange={this.props.onChange}/>
+              onChange={this.props.onChange} />
           </div>
+
           <div>
             <PraesentationsSicht/>
+          <div style={{height: "inherit"}}>
+            <PraesentationsSicht
+              folien={this.props.folien}/>
           </div>
         </SwipeableViews>
       </div>

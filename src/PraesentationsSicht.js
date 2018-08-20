@@ -17,6 +17,18 @@ import FolienGrid from './FolienGrid'
 
 class PraesentationsSicht extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentFolie: 0,
+    };
+
+    this.onClick=this.onClick.bind(this);
+  }
+
+  onClick = (value) => {
+    this.setState({currentFolie: value});
+  };
 
   render() {
 
@@ -27,6 +39,14 @@ class PraesentationsSicht extends Component {
         </div>
         <div className="midColumn">
             <PraesentationFolie/>
+      <div id ="PresentationView">
+        <div class="leftColumn">
+            <FolienGrid folien={this.props.folien}
+              onClick = {this.onClick}
+            />
+        </div>
+        <div class="midColumn">
+            <PraesentationFolie inhalt={this.props.folien[this.state.currentFolie]}/>
         </div>
         <div className="rightColumn">
           <Facecam />
